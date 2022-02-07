@@ -36,7 +36,7 @@ implementation 'com.fumanix.framework:leaf-spring-boot-starter:0.0.1'
 ```java
 public class LeafGeneratorTest {
     @Test
-    public void strGenerator(){
+    public void generator(){
         //OS + 20200617102056 + 自增序列(截取字符串0到16位为key自增, 取4位数字(不足位前面补0))
         LeafGenerator.gen("str@OS|date@yyyyMMddHHmmss|seq@4,0,16");      //OS202006162224490001
         //以 ESA 为Key 生成8位数字自增序列(不足8位前面补0)
