@@ -42,7 +42,7 @@ public class LeafGeneratorTest {
         //以 ESA 为Key 生成8位数字自增序列(不足8位前面补0)
         LeafGenerator.gen("seq@8,ESA");                                  //00000001 - 99999999
         //SN + 20200617102056 + 随机字符(截取字符串0到16位为key比对随机生成的6位字符串是否已存在)
-        SnGenerator.gen("str@SN|date@yyyyMMddHHmmss|random@6,0,16");
+        LeafGenerator.gen("str@SN|date@yyyyMMddHHmmss|random@6,0,16");
         //32位交易号
         LeafGenerator.gen("trade@");
         //或
